@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.post {
+    /*margin: 25px;*/
+    padding-left: 20px;
+}
+.posts {
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px;
+    max-width: 600px;
+}
