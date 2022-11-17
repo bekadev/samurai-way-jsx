@@ -6,6 +6,10 @@
 .post {
     /*margin: 25px;*/
     padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
 }
 .posts {
     display: flex;

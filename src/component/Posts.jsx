@@ -10,6 +10,11 @@ export const Posts = (props) => {
         props.addPosts(title)
         setTitle('')
     }
+    const onKeyPressHandler = (e) => {
+        if (e.key === 'Enter') {
+            onClickHandler()
+        }
+    }
     return (
         <div style={{margin: '10px 25px 30px'}}>
             <Typography
@@ -21,8 +26,8 @@ export const Posts = (props) => {
                 My posts
             </Typography>
             <br/>
-            <TextField onChange={onChangeHandler} value={title} id="outlined-basic" label="your news..." variant="outlined" style={{width: '900px'}}/>
-            <Button onClick={onClickHandler} style={{marginTop: '20px', position: 'absolute', right: '0'}} variant="contained">Sent</Button>
+            <TextField onKeyPress={onKeyPressHandler} onChange={onChangeHandler} value={title} id="outlined-basic" label="your news..." variant="outlined" style={{width: '900px'}}/>
+            <Button  onClick={onClickHandler} style={{marginTop: '20px', position: 'absolute', right: '0'}} variant="contained">Sent</Button>
         </div>
     );
 };

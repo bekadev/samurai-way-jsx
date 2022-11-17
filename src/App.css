@@ -1,4 +1,6 @@
-
+a {
+    text-decoration: none;
+}
 .App {
     font-family: "Montserrat", sans-serif;
 }
